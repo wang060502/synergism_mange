@@ -40,6 +40,22 @@
           </el-menu-item>
         </el-sub-menu>
 
+        <!-- 通知管理 -->
+        <el-sub-menu index="notice">
+          <template #title>
+            <el-icon><Bell /></el-icon>
+            <span>通知管理</span>
+          </template>
+          <el-menu-item index="/notice/list">
+            <el-icon><List /></el-icon>
+            <span>通知列表</span>
+          </el-menu-item>
+          <el-menu-item index="/notice/my">
+            <el-icon><Message /></el-icon>
+            <span>我的通知</span>
+          </el-menu-item>
+        </el-sub-menu>
+
 
         <!-- 系统管理 -->
         <el-sub-menu index="system">

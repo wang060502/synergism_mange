@@ -33,6 +33,24 @@ const router = createRouter({
             icon: 'Key',
           },
         },
+
+        // 通知管理
+        {
+          path: '/notice/list',
+          component: () => import('@/views/notice/list.vue'),
+          meta: {
+            title: '通知列表',
+            icon: 'Bell',
+          },
+        },
+        {
+          path: '/notice/my',
+          component: () => import('@/views/notice/my.vue'),
+          meta: {
+            title: '我的通知',
+            icon: 'Message',
+          },
+        },
         // 系统管理
         {
           path: '/system',
