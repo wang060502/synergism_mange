@@ -51,6 +51,14 @@ const router = createRouter({
             icon: 'Message',
           },
         },
+        {
+          path:'/projects/list',
+          component: () => import('@/views/projects/index.vue'),
+          meta: {
+            title:'项目列表',
+            icon: "Bell"
+          }
+        },
         // 系统管理
         {
           path: '/system',

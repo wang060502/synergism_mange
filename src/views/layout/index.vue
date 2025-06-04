@@ -40,6 +40,7 @@
           </el-menu-item>
         </el-sub-menu>
 
+
         <!-- 通知管理 -->
         <el-sub-menu index="notice">
           <template #title>
@@ -53,6 +54,23 @@
           <el-menu-item index="/notice/my">
             <el-icon><Message /></el-icon>
             <span>我的通知</span>
+          </el-menu-item>
+        </el-sub-menu>
+
+
+        <!-- 项目管理 -->
+        <el-sub-menu index="projects">
+          <template #title>
+            <el-icon><Folder /></el-icon>
+            <span>项目管理</span>
+          </template>
+          <el-menu-item index="/projects/list">
+            <el-icon><List /></el-icon>
+            <span>项目列表</span>
+          </el-menu-item>
+          <el-menu-item index="/projects/my">
+            <el-icon><Message /></el-icon>
+            <span>我的项目</span>
           </el-menu-item>
         </el-sub-menu>
 
@@ -187,6 +205,7 @@ import {
   FullScreen,
   Close,
   Key,
+  Folder,
 } from '@element-plus/icons-vue'
 import { useRouter } from 'vue-router'
 import { getUserProfile } from '@/api/login/userinfo'
